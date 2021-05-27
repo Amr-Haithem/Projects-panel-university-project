@@ -1,4 +1,4 @@
-package sample;
+package Projects_Panel;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

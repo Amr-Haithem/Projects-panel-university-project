@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Type_details" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projects_Panel.singleProjectDetails.DetailsController">
+   <children>
+      <Button fx:id="backToProjects_button" layoutX="133.0" layoutY="623.0" mnemonicParsing="false" onAction="#backToProjectsPanel" prefHeight="37.0" prefWidth="122.0" text="Back" />
+      <TextArea fx:id="Project_describtion_details" layoutX="53.0" layoutY="373.0" prefHeight="236.0" prefWidth="494.0" />
+      <TextField fx:id="project_title_details" layoutX="105.0" layoutY="92.0" />
+      <TextField fx:id="client_id_details" layoutX="339.0" layoutY="92.0" />
+      <TextField fx:id="Managers_id_details" layoutX="339.0" layoutY="177.0" />
+      <TextField fx:id="cost_details" layoutX="105.0" layoutY="177.0" />
+      <DatePicker fx:id="DatePicker_Details" layoutX="356.0" layoutY="274.0" />
+      <MenuButton fx:id="type_input" layoutX="71.0" layoutY="269.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="168.0" text="Add project Type">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Game" />
+            <MenuItem mnemonicParsing="false" text="Mobile App" />
+            <MenuItem mnemonicParsing="false" text="Desktop App" />
+            <MenuItem mnemonicParsing="false" text="Web app" />
+            <MenuItem mnemonicParsing="false" text="Embedded sys. app" />
+            <MenuItem mnemonicParsing="false" text="Data analysis" />
+         </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <Text layoutX="119.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project title" wrappingWidth="122.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="373.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client id" wrappingWidth="122.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="156.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="122.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="357.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager id" wrappingWidth="122.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="381.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date picker" wrappingWidth="149.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="221.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Describtion" wrappingWidth="222.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="Update_data" layoutX="346.0" layoutY="623.0" mnemonicParsing="false" onAction="#UpdateProject" prefHeight="37.0" prefWidth="122.0" text="Update data" />
+   </children>
+</AnchorPane>

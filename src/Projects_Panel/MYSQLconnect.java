@@ -1,4 +1,4 @@
-package sample;
+package Projects_Panel;
 import java.sql.*;
 import javafx.collections.*;
 import javax.swing.JOptionPane;
@@ -7,14 +7,14 @@ import javax.swing.JOptionPane;
 public class MYSQLconnect {
 
 
-    Connection con = null;
+    private Connection con = null;
 
     public static Connection ConnectDb() {
         try {
             System.out.println("connetDb accessed successfully");
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://sql4.freesqldatabase.com:3306", "sql4409579", "zhc6fDgqd6");
-            JOptionPane.showMessageDialog(null, "ConnectionEstablished");
+            //JOptionPane.showMessageDialog(null, "ConnectionEstablished");
             return con;
 
         } catch (Exception e) {
@@ -43,8 +43,10 @@ public class MYSQLconnect {
                         ,rs.getString("projectDescription")
                         ,rs.getString("date")
                         ,rs.getString("type")
-                        ,rs.getString("client_name")
-                        ,rs.getString("Manager_name")
+                        ,rs.getInt("client_name")
+                        ,rs.getInt("Manager_name")
+                        ,rs.getFloat("cost")
+                        ,rs.getString("Payment_method")
                         )
 
                 );

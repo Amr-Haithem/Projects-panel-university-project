@@ -1,4 +1,4 @@
-package sample;
+package Projects_Panel;
 
 public class Projects {
 
@@ -6,9 +6,11 @@ public class Projects {
     private String projectTitle;
     private String dateOfDelivery;
     private String projectDescribtion;
-    private String client_name;
+    private int client_id;
     private String Type;
-    private String Manager;
+    private int Manager;
+    private float cost;
+    private String PaymentMethod;
 
 
     //Department department;
@@ -20,19 +22,20 @@ public class Projects {
                     String projectDescribtion,
                     String dateOfDelivery,
                     String Type,
-                    String client_name,
-                    String Manager
+                    int client_id,
+                    int Manager,
 
 
-
-                    ) {
+                    float cost, String paymentMethod) {
         this.projectId = projectId;
-        this.client_name=client_name;
+        this.client_id = client_id;
         this.projectTitle = projectTitle;
         this.dateOfDelivery = dateOfDelivery;
         this.projectDescribtion = projectDescribtion;
         this.Type = Type;
-        this.Manager=Manager;
+        this.Manager = Manager;
+        this.cost = cost;
+        PaymentMethod = paymentMethod;
     }
 
     public void setProjectId(int projectId) {
@@ -50,13 +53,17 @@ public class Projects {
     public void setProjectDescribtion(String projectDescribtion) {
         this.projectDescribtion = projectDescribtion;
     }
-    public void setClient_name(String client_name) {
-            this.client_name = client_name;
+
+    public void setClient_name(int client_id) {
+        this.client_id = client_id;
     }
+
     public void setType(String Type) {
-            this.Type = Type;
-    }public void setManager(String Manager) {
-            this.Manager = Manager;
+        this.Type = Type;
+    }
+
+    public void setManager(int Manager) {
+        this.Manager = Manager;
     }
 
     public int getProjectId() {
@@ -74,13 +81,24 @@ public class Projects {
     public String getProjectDescribtion() {
         return projectDescribtion;
     }
-    public String getClient_name() {
-        return this.client_name;
+
+    public int getClient_name() {
+        return this.client_id;
     }
+
     public String getType() {
         return this.Type;
     }
-    public String getManager() {
+
+    public int getManager() {
         return Manager;
+    }
+
+    public float getCost() {
+        return cost;
+    }
+
+    public String getPaymentMethod() {
+        return PaymentMethod;
     }
 }

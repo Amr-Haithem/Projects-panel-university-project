@@ -24,7 +24,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="dd98e009-4502-42a0-84db-a14bdf022edc">
+        <schema name="sql4409579" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="dd98e009-4502-42a0-84db-a14bdf022edc">
@@ -38,7 +42,11 @@
     <connection id="dd98e009-4502-42a0-84db-a14bdf022edc" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="dd98e009-4502-42a0-84db-a14bdf022edc" dataset="sql4409579.Projects" active-filter-id="" />
+    <filter-actions connection-id="dd98e009-4502-42a0-84db-a14bdf022edc" dataset="sql4409579.Projects" active-filter-id="321e5636-4f7b-4251-a435-8977be72ad4a">
+      <filter id="321e5636-4f7b-4251-a435-8977be72ad4a" name="client_id" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="client_name" operator="=" value="client_id" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

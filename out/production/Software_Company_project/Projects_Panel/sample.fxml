@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projects_Panel.Controller">
    <content>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1235.0" prefWidth="846.0">
          <children>
@@ -58,11 +58,11 @@
             </Label>
             <TableView fx:id="projects_table" layoutX="93.0" layoutY="444.0" prefHeight="413.0" prefWidth="547.0">
                <columns>
-                  <TableColumn fx:id="id_column0" prefWidth="78.0" style="-fx-alignment: CENTER;: align center;" text="id" />
+                  <TableColumn fx:id="id_column0" prefWidth="78.0" text="id" />
                   <TableColumn fx:id="projects_column" prefWidth="468.0" text="Projects" />
                </columns>
             </TableView>
-            <Button layoutX="294.0" layoutY="383.0" mnemonicParsing="false" onAction="#AddUsers" prefHeight="35.0" prefWidth="143.0" text="Add">
+            <Button layoutX="294.0" layoutY="383.0" mnemonicParsing="false" onAction="#AddProject" prefHeight="35.0" prefWidth="143.0" text="Add">
                <font>
                   <Font size="16.0" />
                </font>

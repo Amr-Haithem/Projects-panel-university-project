@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projects_Panel.Controller">
    <content>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1235.0" prefWidth="846.0">
          <children>
@@ -58,10 +58,11 @@
             </Label>
             <TableView fx:id="projects_table" layoutX="93.0" layoutY="444.0" prefHeight="413.0" prefWidth="547.0">
                <columns>
-                  <TableColumn fx:id="projects_column" prefWidth="546.0" text="Projects" />
+                  <TableColumn fx:id="id_column0" prefWidth="78.0" text="id" />
+                  <TableColumn fx:id="projects_column" prefWidth="468.0" text="Projects" />
                </columns>
             </TableView>
-            <Button layoutX="294.0" layoutY="383.0" mnemonicParsing="false" onAction="#AddUsers" prefHeight="35.0" prefWidth="143.0" text="Add">
+            <Button layoutX="294.0" layoutY="383.0" mnemonicParsing="false" onAction="#AddProject" prefHeight="35.0" prefWidth="143.0" text="Add">
                <font>
                   <Font size="16.0" />
                </font>
@@ -77,13 +78,19 @@
                </font>
             </Button>
             <TextField fx:id="client_input" layoutX="257.0" layoutY="66.0" prefHeight="25.0" prefWidth="194.0" />
-            <Label layoutX="311.0" layoutY="25.0" prefHeight="33.0" prefWidth="132.0" text="Client name" textAlignment="CENTER" wrapText="true">
+            <Label layoutX="305.0" layoutY="25.0" prefHeight="33.0" prefWidth="132.0" text="Client id" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
             <TextField fx:id="ManagerName_input" layoutX="468.0" layoutY="66.0" prefHeight="25.0" prefWidth="194.0" />
-            <Label layoutX="514.0" layoutY="25.0" prefHeight="33.0" prefWidth="132.0" text="Manager name" textAlignment="CENTER" wrapText="true">
+            <Label layoutX="514.0" layoutY="25.0" prefHeight="33.0" prefWidth="132.0" text="Manager id" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Cost_input" layoutX="274.0" layoutY="332.0" prefHeight="25.0" prefWidth="133.0" />
+            <Label layoutX="319.0" layoutY="297.0" prefHeight="33.0" prefWidth="132.0" text="Cost" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>
